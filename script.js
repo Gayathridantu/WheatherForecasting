@@ -70,7 +70,7 @@ const getWeatherDetails= (city,lat,lon)=>{
 const getCityCoordinates=()=>{
     const city=cityName.value.trim();//removes spaces by using trim
     if(!city) return
-    const GET_API=`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_key}`;
+    const GET_API=`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_key}`;
     
     fetch(GET_API).then(res=>res.json()).then(data=>{
         //if(data.length==0) return alert("Invalid data");
