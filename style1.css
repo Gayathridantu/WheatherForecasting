@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    width: 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTawV30vWIUl9F1-nMsRokr-oRKxfHy8MVoSzjsINdnW-KNn08H6jxKr14XkjI6dQUNt2Y&usqp=CAU");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    padding: 20px;
+    text-align: center;
+    text-shadow: paleturquoise;
+}
+a{
+    padding: 15px;
+    color: black;
+}
+h1{
+    color:antiquewhite;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 40px;
+    background-color: darkblue;
+}
+.container{
+    display: flex;
+    gap: 35px;
+    padding: 30px; 
+}
+input{
+    height: 46px;
+    padding: 30px;
+    margin-top: 20px;
+}
+.searchbar{
+   border-radius: 25px;
+   text-align: center;
+}
+.content{
+    width: 100%;
+}
+.current{
+    background-color: blue;
+    color: wheat;
+    padding: 20px 70px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+.current h2{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+p{
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: 500;
+}
+img{
+    border-radius: 25px;
+    max-width: 100px;
+    margin-top: -10px
+}
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px; 
+}
+.a{
+   display: inline-block;
+   padding: 16px 17px 18px 19px;
+   background-color: rgb(204, 184, 158);
+   transition: transform .5s;
+}
+.a:hover {
+    transform: scale(1.2); 
+  }
+.b{
+    margin-top: 15px;
+    max-width: 100px;
+    border-radius: 25%;
+}
+.main1{
+    text-align: center;
+    padding: 15px;
+    background-color: blue;
+    color:antiquewhite
+}
+
+@media screen and (max-width:550px)
+{
+    .days{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px; 
+    }
+    .a{
+       padding: 16px 17px 18px 19px;
+       background-color: rgb(204, 184, 158);
+       transition: transform .5s;
+    }           
+}
+@media screen and   (max-width:550px){
+    .container{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 30px; 
+    }
+}
+@media screen and   (max-width:721px){
+    .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 30px; 
+    }
+    
+}
